@@ -1,3 +1,11 @@
+html {
+  background: url(media/eugene-deshko-ic_ED5M5evg-unsplash.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
 .card {
   margin: 50px auto;
   width: 80%;
