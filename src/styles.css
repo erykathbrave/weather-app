@@ -25,6 +25,7 @@ body {
 }
 p {
   line-height: 5px;
+  color: red;
 }
 ul {
   list-style-type: none;
