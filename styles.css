@@ -121,6 +121,7 @@ h2 {
 
 .source-link {
   margin: 0 auto;
+  font-weight: 700;
   color: white;
 }
 .source-link a {
