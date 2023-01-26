@@ -57,6 +57,9 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border: none;
 }
+a {
+  color: white;
+}
 .bg-light {
   background-color: transparent !important;
 }
