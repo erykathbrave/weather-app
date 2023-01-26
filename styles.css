@@ -26,6 +26,9 @@ body {
   margin: 50px auto;
   width: 80%;
   background-color: transparent !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .form-inline {
   margin: 0 auto;
