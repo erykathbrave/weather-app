@@ -7,8 +7,9 @@ html {
   background-size: cover;
 }
 body {
-  font-family: "Quicksand", sans-serif;
   background-color: transparent !important;
+  font-family: "Quicksand", sans-serif;
+  color: rgba(82, 57, 115, 0.32);
 }
 .container {
   margin: 100px auto;
