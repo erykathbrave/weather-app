@@ -40,6 +40,9 @@ body {
   text-align: left;
   background-color: transparent !important;
 }
+.card-header {
+  border-bottom: none;
+}
 .nav {
   background-color: transparent !important;
 }
