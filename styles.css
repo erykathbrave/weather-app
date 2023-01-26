@@ -19,7 +19,7 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgba(82, 57, 115, 0.32);
+  color: #35283a;
 }
 
 .card {
