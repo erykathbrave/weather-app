@@ -45,6 +45,9 @@ body {
 .bg-light {
   background-color: transparent !important;
 }
+.form-control {
+  background-color: transparent !important;
+}
 p {
   line-height: 5px;
 }
