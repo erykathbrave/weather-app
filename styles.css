@@ -97,6 +97,19 @@ button {
 .btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(31, 38, 135, 0.5);
 }
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(236, 9, 93, 0.5);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #a72848;
+  border-color: #a7285d;
+}
 p {
   line-height: 5px;
 }
