@@ -98,6 +98,10 @@ p {
   line-height: 5px;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .source-link {
   margin: 0 auto;
 }
