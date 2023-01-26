@@ -98,7 +98,8 @@ p {
   line-height: 5px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 50px;
 }
 
