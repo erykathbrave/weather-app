@@ -1,10 +1,14 @@
-body {
+html {
   background-color: blue;
   background-image: url(eugene-deshko-ic_ED5M5evg-unsplash.jpg) no-repeat center
     center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Quicksand", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 100;
   font-style: normal;
