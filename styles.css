@@ -1,7 +1,7 @@
 body {
   background-color: blue;
-  background-image: url(media/eugene-deshko-ic_ED5M5evg-unsplash.jpg) no-repeat
-    center center fixed;
+  background-image: url(eugene-deshko-ic_ED5M5evg-unsplash.jpg) no-repeat center
+    center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
