@@ -36,6 +36,9 @@ body {
   text-align: left;
   background-color: transparent !important;
 }
+.nav {
+  background-color: transparent !important;
+}
 p {
   line-height: 5px;
 }
