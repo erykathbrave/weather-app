@@ -55,7 +55,7 @@ body {
 .nav-tabs .nav-link.active {
   color: #35283a;
   background: rgba(255, 255, 255, 0.2);
-  border-color: #dee2e6 #dee2e6 #fff;
+  border: none;
 }
 .bg-light {
   background-color: transparent !important;
