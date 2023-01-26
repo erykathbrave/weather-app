@@ -33,6 +33,7 @@ body {
 }
 .card-text {
   text-align: left;
+  background-color: transparent !important;
 }
 p {
   line-height: 5px;
