@@ -58,7 +58,10 @@ body {
   border: none;
 }
 a {
-  color: white;
+  color: #35283a;
+}
+a:hover {
+  color: #35283a;
 }
 .bg-light {
   background-color: transparent !important;
