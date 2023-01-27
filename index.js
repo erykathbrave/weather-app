@@ -44,7 +44,7 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 
   let currentCityName = response.data.name;
   let currentCityDis = document.querySelector("#current-city-display");
