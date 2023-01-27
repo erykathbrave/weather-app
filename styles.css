@@ -38,6 +38,7 @@ body {
 }
 .card-text {
   text-align: left;
+  text-transform: capitalize;
   background-color: transparent !important;
 }
 .card-header {
