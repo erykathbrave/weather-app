@@ -135,7 +135,6 @@ h2 {
 .aligned .active {
   color: #35283a;
   cursor: default;
-  font-weight: 900;
 }
 .aligned .active:hover {
   text-decoration: none;
