@@ -41,8 +41,10 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
-  let temperature = Math.round(response.data.main.temp);
-  document.querySelector("#temperature").innerHTML = `${temperature}°C`;
+  celsiusTemperature = response.data.main.temp;
+
+  let temperature = Math.round(celsiusTemperature);
+  document.querySelector("#temperature").innerHTML = `${temperature}`;
   //Precip, humidity, wind
   console.log(response.data);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -72,9 +74,24 @@ function showCurrent(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
 let currentButton = document.querySelector("#current-city-temp-button");
 currentButton.addEventListener("click", showCurrent);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
 search("Austin");

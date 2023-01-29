@@ -133,6 +133,12 @@ h2 {
   align-items: center;
 }
 
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -16px;
+}
+
 .source-link {
   font-weight: bold;
   color: white;
