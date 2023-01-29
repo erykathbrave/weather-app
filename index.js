@@ -77,13 +77,18 @@ function showCurrent(event) {
 
 function showFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-
   let temperature = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
