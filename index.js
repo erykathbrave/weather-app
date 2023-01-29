@@ -35,6 +35,12 @@ function showTemperature(response) {
   document.querySelector("#current-city-display").innerHTML =
     response.data.main;
   //display current city temp
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
   let temperature = Math.round(response.data.main.temp);
   document.querySelector("#temperature").innerHTML = `${temperature}°C`;
   //Precip, humidity, wind

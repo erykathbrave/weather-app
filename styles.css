@@ -120,6 +120,17 @@ h1,
 h2 {
   font-size: 50px;
 }
+.weather-icon {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+.aligned {
+  display: flex;
+  align-items: center;
+}
 
 .source-link {
   font-weight: bold;
