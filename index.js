@@ -82,6 +82,11 @@ function showFahrenheitTemperature(event) {
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
 
 let currentButton = document.querySelector("#current-city-temp-button");
 currentButton.addEventListener("click", showCurrent);
@@ -93,5 +98,8 @@ let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Austin");
