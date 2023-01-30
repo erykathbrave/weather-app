@@ -135,10 +135,11 @@ h2 {
   flex-wrap: nowrap;
 }
 .aligned .active {
-  color: #35283a;
+  color: white;
   cursor: default;
-  background-color: white;
-  border-radius: 100px;
+  background-color: #a793a7;
+  padding: 2px;
+  border-radius: 15%;
 }
 .aligned .active:hover {
   text-decoration: none;
