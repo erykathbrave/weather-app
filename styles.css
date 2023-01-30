@@ -137,7 +137,7 @@ h2 {
 .aligned .active {
   color: white;
   cursor: default;
-  background-color: #a793a7;
+  background: rgba(59, 24, 71, 0.4);
   padding: 2px;
   border-radius: 15%;
 }
