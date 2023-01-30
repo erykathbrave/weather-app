@@ -138,6 +138,7 @@ h2 {
   color: #35283a;
   cursor: default;
   background-color: white;
+  border-radius: 100px;
 }
 .aligned .active:hover {
   text-decoration: none;
