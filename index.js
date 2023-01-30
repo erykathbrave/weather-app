@@ -92,12 +92,12 @@ function displayCelsiusTemperature(event) {
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
-function getCityLink(event) {
+function getNewOrleansLink(event) {
   event.preventDefault();
   search("new orleans");
 }
 let newOrleansLink = document.querySelector("#new-orleans");
-newOrleansLink.addEventListener("click", getCityLink);
+newOrleansLink.addEventListener("click", getNewOrleansLink);
 
 let currentButton = document.querySelector("#current-city-temp-button");
 currentButton.addEventListener("click", showCurrent);
