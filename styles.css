@@ -165,7 +165,7 @@ ul {
 li {
   text-transform: capitalize;
 }
-.theme-button button {
+.theme-button {
   font-size: 12px;
   display: block;
   margin: 0 auto;
@@ -176,7 +176,7 @@ li {
 i {
   color: white;
 }
-.theme-button button i:hover {
+.theme-button i:hover {
   color: black;
   background: transparent;
   cursor: pointer;
