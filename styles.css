@@ -165,18 +165,18 @@ ul {
 li {
   text-transform: capitalize;
 }
-.theme-button {
+.theme-button button {
   font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  border: transparent;
   background: transparent;
   color: white;
 }
 i {
   color: white;
 }
-.theme-button i:hover {
-  display: block;
-  margin: 0 auto;
-  border: transparent;
+.theme-button button i:hover {
   color: black;
   background: transparent;
   cursor: pointer;
