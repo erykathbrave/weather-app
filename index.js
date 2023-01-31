@@ -96,6 +96,25 @@ function getNewOrleansLink(event) {
   event.preventDefault();
   search("new orleans");
 }
+
+function changeTheme() {
+  let theme = document.querySelector("html");
+
+  if (theme.classList.contains("dark")) {
+    theme.classList.remove("dark");
+  } else {
+    theme.classList.add("dark");
+  }
+}
+function myFunction(x) {
+  let togglebutton = document.querySelector("#toggle-icon");
+  togglebutton.classList.toggle("fa-moon");
+  togglebutton.classList.toggle("fa-sun");
+}
+
+let themeButton = document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme);
+
 let newOrleansLink = document.querySelector("#new-orleans");
 newOrleansLink.addEventListener("click", getNewOrleansLink);
 

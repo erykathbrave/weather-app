@@ -165,3 +165,45 @@ ul {
 li {
   text-transform: capitalize;
 }
+.theme-button {
+  font-size: 12px;
+  background: transparent;
+  color: white;
+}
+i {
+  color: white;
+}
+.theme-button i:hover {
+  color: black;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dark {
+  background: url(dieter-wolf-3-EZ8eQ-1bk-unsplash.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.dark .container {
+  margin: 100px auto;
+  width: 70%;
+  background: rgba(8, 8, 8, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+.dark .card {
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
