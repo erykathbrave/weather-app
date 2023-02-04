@@ -18,6 +18,33 @@ let day = days[now.getDay()];
 
 currentdate.innerHTML = `${day} ${hour}:${minutes}`;
 
+function DisplayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  let forecastHTML = ` <div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `        
+              <div class="col-2">
+                <div class="weather-forecast-day">${day}</div>
+                <img
+                  src="https://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="36"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperatures-max"> 18° </span>/
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
+              </div>
+          `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function search(city) {
   let apiKey = "2a2eaa51d996796495bf456e5b58adf4";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
@@ -133,3 +160,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Austin");
+DisplayForecast();
