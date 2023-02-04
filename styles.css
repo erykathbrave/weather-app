@@ -17,7 +17,7 @@ body {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #35283a;
 }
@@ -152,6 +152,11 @@ h2 {
   top: -16px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  overflow-wrap: break-word;
+}
+
 .source-link {
   font-weight: bold;
   color: white;
@@ -166,9 +171,10 @@ li {
   text-transform: capitalize;
 }
 .theme-button {
-  font-size: 12px;
+  font-size: 20px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0;
+
   border: transparent;
   background: transparent;
   color: white;
@@ -177,7 +183,9 @@ i {
   color: white;
 }
 .theme-button i:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.4);
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   background: transparent;
   cursor: pointer;
 }
