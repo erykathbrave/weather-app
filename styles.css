@@ -154,7 +154,6 @@ h2 {
 
 .weather-forecast {
   margin-top: 20px;
-  overflow-wrap: break-word;
 }
 
 .source-link {
@@ -188,6 +187,13 @@ i {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   background: transparent;
   cursor: pointer;
+}
+.row {
+  display: flex;
+}
+.col-2 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .dark {
