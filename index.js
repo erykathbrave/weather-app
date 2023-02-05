@@ -18,7 +18,7 @@ let day = days[now.getDay()];
 
 currentdate.innerHTML = `${day} ${hour}:${minutes}`;
 
-function DisplayForecast() {
+function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
   let forecastHTML = ` <div class="row">`;
@@ -43,6 +43,13 @@ function DisplayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
+}
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "2a2eaa51d996796495bf456e5b58adf4";
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiURL);
+  axios.get(apiURL).then(displayForecast);
 }
 
 function search(city) {
@@ -84,6 +91,8 @@ function showTemperature(response) {
   let currentCityName = response.data.name;
   let currentCityDis = document.querySelector("#current-city-display");
   currentCityDis.innerHTML = `${currentCityName}`;
+
+  getForecast(response.data.coord);
 }
 
 function showPosition(position) {
@@ -160,4 +169,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Austin");
-DisplayForecast();
