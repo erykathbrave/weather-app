@@ -257,7 +257,8 @@ li {
 }
 .dark .container {
   margin: 30px auto;
-  width: 70%;
+  max-width: 700px;
+  min-width: 200px;
   background: rgba(8, 8, 8, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
