@@ -52,7 +52,7 @@ function displayForecast(response) {
                   )}° </span>/
                   <span class="weather-forecast-temperature-min"> ${Math.round(
                     forecastDay.temp.min
-                  )} </span>
+                  )}°  </span>
                 </div>
               </div>
           `;
@@ -150,7 +150,22 @@ function getNewOrleansLink(event) {
   event.preventDefault();
   search("new orleans");
 }
-
+function getAustinLink(event) {
+  event.preventDefault();
+  search("austin");
+}
+function getHoustonLink(event) {
+  event.preventDefault();
+  search("houston");
+}
+function getMiamiLink(event) {
+  event.preventDefault();
+  search("miami");
+}
+function getLosAngelesLink(event) {
+  event.preventDefault();
+  search("los angeles");
+}
 function changeTheme() {
   let theme = document.querySelector("html");
 
@@ -171,6 +186,18 @@ themeButton.addEventListener("click", changeTheme);
 
 let newOrleansLink = document.querySelector("#new-orleans");
 newOrleansLink.addEventListener("click", getNewOrleansLink);
+
+let austinLink = document.querySelector("#austin");
+austinLink.addEventListener("click", getAustinLink);
+
+let houstonLink = document.querySelector("#houston");
+houstonLink.addEventListener("click", getHoustonLink);
+
+let miamiLink = document.querySelector("#miami");
+miamiLink.addEventListener("click", getMiamiLink);
+
+let losAngelesLink = document.querySelector("#los-angeles");
+losAngelesLink.addEventListener("click", getLosAngelesLink);
 
 let currentButton = document.querySelector("#current-city-temp-button");
 currentButton.addEventListener("click", showCurrent);
