@@ -1,4 +1,3 @@
-//Get current date
 let now = new Date();
 let currentdate = document.querySelector("#current-date");
 
@@ -49,7 +48,7 @@ function formatDay(timestamp) {
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  // let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+
   let forecastHTML = ` <div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
@@ -90,10 +89,9 @@ function getForecast(coordinates) {
 }
 
 function showTemperature(response) {
-  //display current city name
   document.querySelector("#current-city-display").innerHTML =
     response.data.main;
-  //display current city temp
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
@@ -104,7 +102,6 @@ function showTemperature(response) {
 
   let temperature = Math.round(celsiusTemperature);
   document.querySelector("#temperature").innerHTML = `${temperature}`;
-  //Precip, humidity, wind
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -125,7 +122,7 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 }
-//Search city to get temp and weather conditions
+
 function searchCity(event) {
   event.preventDefault();
   let city = document.querySelector("#current-city-input").value;
