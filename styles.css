@@ -12,7 +12,8 @@ body {
 }
 .container {
   margin: 30px auto;
-  width: 70%;
+  max-width: 700px;
+  min-width: 200px;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   backdrop-filter: blur(4px);
@@ -30,6 +31,47 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  background: transparent;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border-radius: 5px;
+}
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #454444;
+}
+
+button[type="submit"]:before {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
 .form-inline {
   margin: 0 auto;
 }
@@ -70,7 +112,7 @@ a:hover {
 }
 .form-control {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  box-shadow: none;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -82,19 +124,15 @@ button {
 .btn-outline-success {
   color: white;
 
-  background: rgba(59, 24, 71, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  border: none;
 }
 .btn-outline-success:hover {
   cursor: pointer;
   color: #35283a;
-  background: rgba(59, 24, 71, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  opacity: 0.7;
+  border: none;
 }
 .btn-outline-success:focus {
   box-shadow: 0 0 0 0.2rem rgba(31, 38, 135, 0.5);
@@ -111,6 +149,13 @@ button {
   color: #fff;
   background-color: #35283a;
   border-color: #35283a;
+}
+.fa-solid {
+  color: rgba(73, 17, 99, 0.5);
+}
+.fa-solid:hover {
+  color: rgba(73, 17, 99, 0.9);
+  cursor: pointer;
 }
 p {
   line-height: 5px;
@@ -178,9 +223,7 @@ li {
   background: transparent;
   color: white;
 }
-i {
-  color: white;
-}
+
 .theme-button i:hover {
   color: rgba(255, 255, 255, 0.4);
 
@@ -254,4 +297,59 @@ i {
 }
 .dark a:hover {
   color: #9c78aa;
+}
+.dark .source-link {
+  font-weight: bold;
+  color: #e6e6e6;
+}
+.dark .source-link a {
+  color: #e6e6e6;
+}
+
+.dark form {
+  color: #e6e6e6;
+  display: flex;
+  padding: 2px;
+  background: #35283a;
+  box-shadow: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border-radius: 5px;
+}
+.dark input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+.dark input[type="search"]::placeholder {
+  color: #e6e6e6;
+}
+
+.dark button[type="submit"]:before {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent;
+}
+
+.dark button[type="submit"]:hover {
+  opacity: 1;
+}
+.dark .fa-solid {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dark .fa-solid:hover {
+  color: rgba(252, 251, 253, 0.9);
+  cursor: pointer;
 }
