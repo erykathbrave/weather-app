@@ -105,7 +105,7 @@ a {
   color: #35283a;
 }
 a:hover {
-  color: #35283a;
+  color: #9c78aa;
 }
 .bg-light {
   background-color: transparent !important;
@@ -260,7 +260,7 @@ li {
   max-width: 700px;
   min-width: 200px;
   background: rgba(8, 8, 8, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(93, 31, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -270,7 +270,7 @@ li {
 .dark .card {
   margin: 50px auto;
   width: 90%;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(93, 31, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -297,7 +297,7 @@ li {
   color: #9c78aa;
 }
 .dark a:hover {
-  color: #9c78aa;
+  color: #d2a3e5;
 }
 .dark .source-link {
   font-weight: bold;
@@ -311,7 +311,7 @@ li {
   color: #e6e6e6;
   display: flex;
   padding: 2px;
-  background: #35283a;
+  background: #201922;
   box-shadow: none;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
