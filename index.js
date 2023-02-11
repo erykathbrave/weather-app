@@ -2,8 +2,11 @@
 let now = new Date();
 let currentdate = document.querySelector("#current-date");
 
-let hour = now.getHours();
-let minutes = now.getMinutes();
+let hour = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
+
+let ampm = now.getHours() >= 12 ? "PM" : "AM";
+
+let minutes = now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
 
 let days = [
   "Sunday",
@@ -15,8 +18,26 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
+let date = now.getDate();
+let year = now.getFullYear();
 
-currentdate.innerHTML = `${day} ${hour}:${minutes}`;
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+let month = months[now.getMonth()];
+
+currentdate.innerHTML = `${hour}:${minutes} ${ampm} - ${day}, ${month} ${date}, ${year}`;
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -60,13 +81,11 @@ function displayForecast(response) {
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
 }
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "2a2eaa51d996796495bf456e5b58adf4";
   let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  console.log(apiURL);
+
   axios.get(apiURL).then(displayForecast);
 }
 
@@ -86,7 +105,7 @@ function showTemperature(response) {
   let temperature = Math.round(celsiusTemperature);
   document.querySelector("#temperature").innerHTML = `${temperature}`;
   //Precip, humidity, wind
-  console.log(response.data);
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
