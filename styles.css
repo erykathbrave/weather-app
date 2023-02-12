@@ -193,8 +193,6 @@ h2 {
 }
 .units {
   position: relative;
-  font-size: 16px;
-  top: -16px;
 }
 
 .weather-forecast {
@@ -279,9 +277,8 @@ li {
 
 .dark .units {
   position: relative;
-  font-size: 16px;
-  top: -16px;
-  color: white;
+
+  color: #bdbcbc;
 }
 .dark .aligned .active {
   cursor: default;
