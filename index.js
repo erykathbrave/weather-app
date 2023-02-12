@@ -1,4 +1,5 @@
 let now = new Date();
+let presenttime = document.querySelector("#present-time");
 let rightnow = document.querySelector("#rightnow");
 let currentdate = document.querySelector("#current-date");
 
@@ -36,7 +37,8 @@ let months = [
   "Dec",
 ];
 let month = months[now.getMonth()];
-rightnow.innerHTML = `${hour}:${minutes} ${ampm} - ${day}`;
+presenttime.innerHTML = `${hour}:${minutes} ${ampm}`;
+rightnow.innerHTML = `${day}`;
 currentdate.innerHTML = `${month} ${date}, ${year}`;
 
 function formatDay(timestamp) {
