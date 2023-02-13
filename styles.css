@@ -34,6 +34,7 @@ body {
 form {
   color: #555;
   display: flex;
+
   padding: 2px;
   background: transparent;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
@@ -74,6 +75,7 @@ button[type="submit"]:hover {
 
 .form-inline {
   margin: 0 auto;
+  flex-flow: nowrap;
 }
 .card-title {
   text-align: left;
